@@ -1,3 +1,21 @@
+/*FARVER*/
+:root {
+  --primary: #ddceac;
+  --secondary: #000000;
+  --accent-red: #cb6f54;
+  --accent-yellow: #d5a453;
+  --accent-green: #638667;
+  --white: #ffffff;
+
+  --space-xs: 16px;
+  --space-sm: 20px;
+  --space-md: 38px;
+
+  --space-lg: 18px;
+  --space-xl: 22px;
+  --space-xxl: 46px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,4 +23,63 @@
 }
 img {
   width: 100%;
+}
+
+/*FONTE*/
+/* 
+Google Fonts
+font-family: "Fraunces"
+font-family: "Nunito Sans" 
+*/
+h1 {
+  font-family: "Fraunces";
+  font-size: var(--space-xxl);
+  color: var(--secondary);
+  font-weight: 900;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 4px;
+}
+
+h2 {
+  font-family: "Fraunces";
+  font-size: var(--space-xl);
+  color: var(--secondary);
+  font-weight: 700;
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+a {
+  font-family: "Nunito Sans";
+}
+
+li {
+  font-family: "Nunito Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+p {
+  font-family: "Nunito Sans";
+  font-size: var(--space-xs);
+  font-weight: 400;
+  line-height: 30px;
+}
+
+@media (min-width: 800px) {
+  p {
+    font-size: var(--space-lg);
+  }
+  h2 {
+    font-size: var(--space-xl);
+  }
+  h1 {
+    font-size: var(--space-xxl);
+  }
+  li {
+    font-size: 18px;
+  }
 }
