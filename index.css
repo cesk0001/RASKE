@@ -55,3 +55,9 @@ main {
 #claims_container img {
   width: 60%;
 }
+
+.video_container {
+  display: flex;
+  align-items: center;
+  place-content: center;
+}
