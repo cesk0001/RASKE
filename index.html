@@ -8,45 +8,74 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+        rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
     <header>
         <div id="top_bar">
-            <div><img src="imgs/bag_w_legs.svg" alt="">
+            <div class="grid1_1">
+                <img src="imgs/bag_w_legs.svg" alt="">
                 <h4>Gratis fragt over 500,-</h4>
             </div>
-            <div><img src="imgs/percentage.svg" alt="">
+            <div class="grid1_1">
+                <img src="imgs/percentage.svg" alt="">
                 <h4>Hent lokalt: Gratis</h4>
             </div>
-            <div><img src="imgs/hand_with_bag.svg" alt="">
+            <div class="grid1_1">
+                <img src="imgs/hand_with_bag.svg" alt="">
                 <h4>Klik & hent (nat og dag)</h4>
             </div>
         </div>
         <nav>
-            <!-- <a class="logo_mobil" href="index.html"><img src="imgs/logo_default.png" alt="Logo"></a> -->
-            <a href="index.html"><img src="imgs/logo_default.png" alt="logo"></a>
+            <div id="logo_container">
+                <a id="logo" href="index.html"><img src="imgs/logo_default.png" alt="logo"></a>
+            </div>
             <ul class="menu">
                 <li><a href="produkter.html">PRODUKTER</a></li>
                 <li><a href="info.html">INFO</a></li>
                 <li><a href="butikker.html">BUTIKKER</a></li>
             </ul>
 
-            <!-- <div class="burger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div> -->
         </nav>
     </header>
 
     <main>
+        <div id="velkommen">
+            <img src="imgs/sol.svg" alt="sol">
+            <h4>Her sælger vi topskud, klumper og andet af lovlig cannabis. Vi prioriterer kvalitet og bæredygtighed
+                over alt andet. Men
+                holder priserne nede og har også en lavprisafdeling. Køb online eller kom ned i butikkerne og duft dig
+                frem.</h4>
+            <img src="imgs/sol.svg" alt="sol">
+        </div>
 
+        <div>
+            <h1>Nyeste høst</h1>
+
+        </div>
+        <div id="claims_container">
+            <img src="imgs/claims.svg" alt="">
+        </div>
+
+        <div class="video_container">
+            <video class="video_link" autoplay muted loop>
+                <source src="https://copenhash.com/raskeplanter-video.mp4" type="video/mp4">
+                <source src="imgs/raskeplanter-video.mp4">
+            </video>
+        </div>
     </main>
 
     <footer>
 
     </footer>
+
+    <script></script>
 </body>
 
 </html>
