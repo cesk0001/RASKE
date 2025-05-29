@@ -7,6 +7,56 @@ img {
   width: 100%;
 }
 
+/* *****slet hvis animation skal væk******** */
+
+#top_bar_section {
+  position: relative;
+  min-height: 39px;
+}
+
+#top_bar_section,
+#top_bar_section * {
+  overflow: hidden;
+}
+
+#top_bar {
+  white-space: nowrap;
+  animation: move-left-to-right linear 20s infinite;
+}
+
+#top_bar_container {
+  position: absolute;
+
+  background-color: #335641;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+  height: 5.5vh;
+}
+
+/* use this one to move from left to right direction */
+@keyframes move-left-to-right {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes move-left-to-right2 {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+/* *****slet hvis animation skal væk******** */
+
 #top_bar {
   background-color: #335641;
   display: flex;
