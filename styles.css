@@ -37,8 +37,8 @@ h1 {
   color: var(--secondary);
   font-weight: 900;
   text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 4px;
+  padding-top: 2rem;
+  padding-bottom: 4px;
 }
 
 h2 {

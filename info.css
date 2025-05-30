@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+}
+
+main {
+  background-color: #e1ceaa;
+}
+
+.title1 {
+  background-image: url(imgs/box1_art.png);
+  background-size: cover;
+  height: 30vh;
+  text-align: center;
+  place-content: center;
+}
+
+.title2 {
+  background-image: url(imgs/box2_art.png);
+  background-size: cover;
+}
+
+.title3 {
+  background-image: url(imgs/box3_art.png);
+  background-size: cover;
+}
+
+.box1 {
+  margin: 10%;
+  padding: 3rem;
+  background-color: #cebb98;
+  border-radius: 0.3rem;
+  display: grid;
+  grid-gap: 30px;
+}
+
+.box2 {
+  margin: 8rem;
+  padding: 1rem;
+  background-color: #cebb98;
+  border-radius: 0.3rem;
+  display: grid;
+  grid-template-rows: 2fr 1fr 2fr;
+}
+
+.box3 {
+  margin: 8rem;
+  padding: 1rem;
+  background-color: #cebb98;
+  border-radius: 0.3rem;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.box1_1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  position: relative;
+}
+
+.blad_portrait {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  position: relative;
+}
+
+#blad1 {
+  grid-row-start: 1;
+  position: absolute;
+}
+
+#portrait {
+  grid-row-start: 2;
+  position: absolute;
+  z-index: 2;
+}
+
+#blad2 {
+  grid-row-start: 4;
+  position: absolute;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
