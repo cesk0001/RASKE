@@ -13,25 +13,15 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
         rel="stylesheet">
-    <script src="produkter.js" defer></script>
+    <script src="produkt.js" defer></script>
     <style>
-        #productGrid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-gap: 20px;
+        #productContainer {
+            max-width: 600px;
+            margin: auto;
         }
 
         .product {
             background: lightgrey;
-        }
-
-        .productLink {
-            display: block;
-            width: 100%;
-            height: 100%;
-            padding: 10px;
-            text-decoration: none;
-            color: black;
         }
 
         .product img {
@@ -95,17 +85,10 @@
 
         </nav>
     </header>
-    <div id="filter">
-        <button type="button" id="all">All Products</button>
-        <button type="button" id="klump">Klump</button>
-        <button type="button" id="topskud">Topskud</button>
-        <button type="button" id="olie">Olier</button>
-        <button type="button" id="extra">Ekstra Ting</button>
-    </div>
-
-    <div id="productGrid">
+    <div id="productContainer">
 
     </div>
+
 </body>
 
 </html>
