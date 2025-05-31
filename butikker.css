@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+}
+
+body {
+  background-color: #e1ceaa;
+}
+
+.forhandler_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  place-items: baseline;
+}
+
+.forhandler_container_mom {
+  background-color: #bcc9a9;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.forhandler_container img {
+  width: 10%;
+}
+
+.forhandler_container a {
+  text-decoration: none;
+  color: black;
+}
+
+.forhandler_container a:hover {
+  color: white;
+}
+
+.grid1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  padding: 2% 5%;
+}
+
+.title_underlined {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  padding-top: 5%;
+}
+
+.title_underlined img {
+  width: 80%;
+}
+
+.title_underlined h2 {
+  padding-top: 15%;
+}
+
+.title_underlined p {
+  padding-top: 5%;
+}
+
+.om_butik {
+  padding-top: 8%;
+}
+
+.om_butik p {
+  padding-top: 3%;
+}
+
+.raske_butik {
+  padding: 3%;
+  place-self: center;
+}
+
+.aabner {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+}
+
+iframe {
+  width: 110%;
+}
+
+@media (max-width: 900px) {
+  .grid1-1 {
+    grid-template-columns: 1fr;
+  }
+}
