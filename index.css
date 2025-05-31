@@ -42,7 +42,7 @@ main {
 }
 
 .card_container_index {
-  margin: 8rem;
+  margin: 8rem 8rem 2rem;
   background-color: #cebb98;
   border-radius: 0.3rem;
 }
