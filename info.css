@@ -172,20 +172,23 @@ body {
 
 #knap1_info {
   inline-size: 400px;
+  margin: 0% 23.4%;
 }
 
 #knap2_info {
   inline-size: 400px;
+  margin: 0% 23.4%;
 }
 
 #knap3_info {
   inline-size: 400px;
+  margin: 0% 23.4%;
 }
 
 .knapper_container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   padding: 5% 10%;
   align-items: center;
   text-align: center;
