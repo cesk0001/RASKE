@@ -18,7 +18,7 @@ function updateProducts() {
 
   let fetchUrl = "https://lxosbgvtiysgcjoeqtep.supabase.co/rest/v1/products?select=id,name,image,tags,price";
   if (categoryId !== "all") {
-    fetchUrl = `${fetchUrl}&tags->>0=eq.${categoryId}`;
+    fetchUrl = `${fetchUrl}&category=eq.${categoryId}`;
   }
 
   fetch(fetchUrl, {
@@ -59,7 +59,7 @@ function addProducts(products) {
     // Tags
     const newTagGroup = document.createElement("div");
     newTagGroup.classList.add("tagGroup");
-    for (let j = 0; j < products[i].tags.length; j++) {
+    for (let j = 0; j < products[i].tags?.length; j++) {
       const newTag = document.createElement("div");
       newTag.classList.add("tag");
       newTag.innerHTML = products[i].tags[j];

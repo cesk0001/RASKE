@@ -32,45 +32,67 @@ function addProduct(productList) {
   const newProduct = document.createElement("div");
   newProduct.classList.add("product");
 
+  // Image Container
+  const newImageContainer = document.createElement("div");
+  newImageContainer.classList.add("imageContainer");
+  newProduct.appendChild(newImageContainer);
+
   // Image
   const newImage = document.createElement("img");
   newImage.src = `./imgs/${product.image}`;
-  newProduct.appendChild(newImage);
+  newImageContainer.appendChild(newImage);
+
+  // Text Container
+  const newTextContainer = document.createElement("div");
+  newTextContainer.classList.add("textContainer");
+  newProduct.appendChild(newTextContainer);
+
+  // Title
+  const newTitle = document.createElement("h1");
+  newTitle.classList.add("title");
+  newTitle.innerHTML = product.name;
+  newTextContainer.appendChild(newTitle);
 
   // Tags
   const newTagGroup = document.createElement("div");
   newTagGroup.classList.add("tagGroup");
-  for (let i = 0; i < product.tags.length; i++) {
+  for (let i = 0; i < product.tags?.length; i++) {
     const newTag = document.createElement("div");
     newTag.classList.add("tag");
     newTag.innerHTML = product.tags[i];
     newTagGroup.appendChild(newTag);
   }
-  newProduct.appendChild(newTagGroup);
-
-  // Title
-  const newTitle = document.createElement("p");
-  newTitle.classList.add("title");
-  newTitle.innerHTML = product.name;
-  newProduct.appendChild(newTitle);
+  newTextContainer.appendChild(newTagGroup);
 
   // Price
   const newPrice = document.createElement("p");
   newPrice.classList.add("price");
   newPrice.innerHTML = `${product.price} Kr.`;
-  newProduct.appendChild(newPrice);
+  newTextContainer.appendChild(newPrice);
 
   // Purchase button
   const newButton = document.createElement("button");
+  newButton.classList.add("purchaseButton");
   newButton.type = "button";
-  newButton.innerHTML = "Køb";
-  newProduct.appendChild(newButton);
+  newButton.innerHTML = "Føj til kurv";
+  newTextContainer.appendChild(newButton);
 
-  // Price
+  // Description Container
+  const newDescriptionContainer = document.createElement("div");
+  newDescriptionContainer.classList.add("descriptionContainer");
+  newProduct.appendChild(newDescriptionContainer);
+
+  // Description Title
+  const newDescriptionTitle = document.createElement("h2");
+  newDescriptionTitle.classList.add("descriptionTitle");
+  newDescriptionTitle.innerHTML = "Description:";
+  newDescriptionContainer.appendChild(newDescriptionTitle);
+
+  // Description
   const newDescription = document.createElement("p");
   newDescription.classList.add("description");
   newDescription.innerHTML = product.description;
-  newProduct.appendChild(newDescription);
+  newDescriptionContainer.appendChild(newDescription);
 
   productContainer.appendChild(newProduct);
 }

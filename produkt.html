@@ -11,17 +11,47 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet">
     <script src="produkt.js" defer></script>
     <style>
+        /* FLYT TIL INDEX.CSS */
+        body {
+            background-color: #e1ceaa;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* FLYT TIL INDEX.CSS */
+
         #productContainer {
-            max-width: 600px;
+            max-width: 1000px;
             margin: auto;
         }
 
         .product {
-            background: lightgrey;
+            background: #FFFFFF;
+            border: 2px solid;
+            border-color: #cebb98;
+            border-radius: 12px;
+            overflow: hidden;
+            margin: 20px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        @media only screen and (min-width: 600px) {
+            .product {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 0 30px;
+                padding: 50px;
+            }
         }
 
         .product img {
@@ -30,25 +60,64 @@
             object-fit: cover;
         }
 
-        .tagGroup {
+        .textContainer {
             display: flex;
-            gap: 4px;
-        }
-
-        .tag {
-            background-color: aquamarine;
-            color: black;
-            padding: 4px;
-            border-radius: 4px;
+            flex-direction: column;
+            justify-content: center;
         }
 
         .product .title {
-            font-size: 24px;
+            font-size: 32px;
+            margin-bottom: 12px;
+            padding: 0;
+            text-align: left;
+        }
+
+        .tagGroup {
+            display: flex;
+            gap: 4px;
+            margin-bottom: 12px;
+        }
+
+        .tag {
+            font-family: "Nunito", sans-serif;
+            background-color: #628667;
+            color: white;
+            font-size: 16px;
+            padding: 6px 12px;
+            border-radius: 10px;
         }
 
         .product .price {
+            font-family: "Nunito", sans-serif;
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+
+        .product .purchaseButton {
+            border: none;
+            background-color: unset;
+            background-image: url("./imgs/box6fill.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 60px;
+            width: 160px;
+            font-family: "Nunito", sans-serif;
             font-size: 20px;
-            font-weight: bold;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .descriptionContainer {
+            grid-column: 1 / span 2;
+        }
+
+        .descriptionTitle {
+            text-align: left;
+        }
+
+        .description {
+            font-family: "Nunito", sans-serif;
         }
     </style>
 </head>
@@ -85,9 +154,9 @@
 
         </nav>
     </header>
-    <div id="productContainer">
-
-    </div>
+    <main>
+        <div id="productContainer"></div>
+    </main>
 
 </body>
 
