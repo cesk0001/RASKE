@@ -37,7 +37,7 @@ main {
 
 .box1 {
   margin: 8% 14%;
-  padding: 1.3rem;
+  padding: 4%;
   background-color: #cebb98;
   border-radius: 0.4rem;
   display: grid;
@@ -50,16 +50,16 @@ main {
   background-color: #cebb98;
   border-radius: 0.4rem;
   display: grid;
-  grid-template-rows: 2fr 1fr 1fr;
 }
 
 .box3 {
-  margin: 8rem;
-  padding: 1rem;
+  margin: 8% 14%;
+  padding: 4%;
   background-color: #cebb98;
   border-radius: 0.4rem;
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .box1_1 {
@@ -78,7 +78,7 @@ main {
 }
 
 .box1_2 img {
-  width: 20%;
+  width: 30%;
 }
 
 .box1_2 {
@@ -123,4 +123,95 @@ main {
 
 #box2_3 {
   gap: 1rem;
+  margin-top: 5%;
+}
+
+.button1 {
+  background-image: url(imgs/box2-rot.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 120%;
+  text-decoration: none;
+  color: black;
+  padding: 5%;
+  inline-size: 320px;
+  overflow-wrap: break-word;
+  text-align: center;
+}
+
+.button1:hover {
+  background-image: url(imgs/button1_white.svg);
+  color: white;
+  cursor: pointer;
+}
+
+.button1_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button1:active {
+  background-image: url(imgs/button1_white.svg);
+  color: black;
+  cursor: pointer;
+}
+
+.box3 p {
+  padding-bottom: 3%;
+}
+
+@media (max-width: 900px) {
+  .box1 {
+    margin: 8% 8%;
+  }
+
+  .box1_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .box1_1-1 {
+    padding-top: 10%;
+    padding-right: 6%;
+  }
+
+  .blad_portrait {
+    display: flex;
+    justify-content: center;
+  }
+
+  .blad_portrait img {
+    width: 60%;
+  }
+
+  .box2 {
+    margin: 8% 8%;
+  }
+
+  .box1_2 p {
+    padding-right: 5%;
+  }
+
+  .box3 {
+    margin: 8% 8%;
+  }
+
+  #logo_box2 {
+    width: 30%;
+    position: absolute;
+    margin-left: 47%;
+    margin-bottom: 10%;
+    opacity: 10%;
+  }
+
+  .button1 {
+    inline-size: 300px;
+    padding: 10%;
+  }
 }

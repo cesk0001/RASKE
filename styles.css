@@ -60,6 +60,20 @@ h3 {
   font-variation-settings: "WONK" 1;
 }
 
+h4 {
+  font-family: "Fraunces", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h5 {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "WONK" 1;
+  line-height: 27px;
+}
+
 a {
   font-family: "Nunito Sans";
 }
@@ -81,6 +95,9 @@ p {
 @media (min-width: 800px) {
   p {
     font-size: var(--space-lg);
+  }
+  h5 {
+    font-size: var(--space-xl);
   }
   h2 {
     font-size: var(--space-xl);

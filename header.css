@@ -26,7 +26,6 @@ img {
 
 #top_bar_container {
   position: absolute;
-
   background-color: #335641;
   display: flex;
   flex-direction: row;
@@ -80,7 +79,7 @@ nav {
   background-position: center;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  height: 62vh;
+  height: 55vh;
 }
 
 nav ul {
@@ -134,4 +133,22 @@ nav ul {
 .menu {
   grid-row-start: 5;
   grid-row-end: 6;
+}
+
+@media (max-width: 900px) {
+  #top_bar {
+    animation: none;
+  }
+
+  #top_bar img {
+    height: 20px;
+  }
+
+  #top_bar h4 {
+    font-size: 10px;
+  }
+
+  #top_bar_section * {
+    overflow: visible;
+  }
 }
