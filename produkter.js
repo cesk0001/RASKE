@@ -46,10 +46,15 @@ function addProducts(products) {
     newLink.href = `produkt.html?id=${products[i].id}`;
     newProduct.appendChild(newLink);
 
+    // Image Container
+    const newImageContainer = document.createElement("div");
+    newImageContainer.classList.add("imageContainer");
+    newLink.appendChild(newImageContainer);
+
     // Image
     const newImage = document.createElement("img");
     newImage.src = `./imgs/${products[i].image}`;
-    newLink.appendChild(newImage);
+    newImageContainer.appendChild(newImage);
 
     // Tags
     const newTagGroup = document.createElement("div");
@@ -60,19 +65,24 @@ function addProducts(products) {
       newTag.innerHTML = products[i].tags[j];
       newTagGroup.appendChild(newTag);
     }
-    newLink.appendChild(newTagGroup);
+    newImageContainer.appendChild(newTagGroup);
+
+    // Text Container
+    const newTextContainer = document.createElement("div");
+    newTextContainer.classList.add("textContainer");
+    newLink.appendChild(newTextContainer);
 
     // Title
     const newTitle = document.createElement("p");
     newTitle.classList.add("title");
     newTitle.innerHTML = products[i].name;
-    newLink.appendChild(newTitle);
+    newTextContainer.appendChild(newTitle);
 
     // Price
     const newPrice = document.createElement("p");
     newPrice.classList.add("price");
     newPrice.innerHTML = `${products[i].price} Kr.`;
-    newLink.appendChild(newPrice);
+    newTextContainer.appendChild(newPrice);
 
     productGrid.appendChild(newProduct);
   }
