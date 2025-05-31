@@ -156,7 +156,7 @@ main {
 }
 
 .button1:active {
-  background-image: url(imgs/button1_white.svg);
+  background-image: url(imgs/box2filled.svg);
   color: black;
   cursor: pointer;
 }
