@@ -13,6 +13,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
     <script src="script.js" defer></script>
 </head>
 
@@ -61,7 +66,7 @@
 
         <div class="box1">
             <div class="box1_1">
-                <div>
+                <div class="box1_1-1">
                     <p>Raske Planter er startet og drevet af Raske Penge.</p>
 
                     <p>Det er et lille firma fra det københavnske
@@ -84,27 +89,37 @@
                         kan drage fordel af alle plantens mange egenskaber.</p>
                 </div>
                 <div class="blad_portrait">
-                    <img id="blad1" src="imgs/hemp_deco.svg" alt="">
                     <img id="portrait" src="imgs/raske_penge_portrait.png" alt="">
-                    <img id="blad2" src="imgs/hemp_deco.svg" alt="">
                 </div>
             </div>
-            <div>
-                <p>Fra frøenes koldpressede olie med gunstige niveauer af Omega- og GLS syrer - over stænglernes fibre
-                    som er nogle af
-                    naturens stærkeste og mest velegnede til papir, tekstil, reb og kompositmateriale og som kan bruges
-                    til miljøvenligere
-                    erstatninger for bomuld, cement, plast og animalske proteiner, der i dag tegner sig for ganske
-                    anseelig klimabelastning
-                    - til bladene og blomsternes eftertragtede cannabinoider, terpener og flavonoider.
-                    Vi ser heldigvis en global tendens til at få hele planten tilbage på bordet. Fra effektive fibre til
-                    terapeutiske
-                    molekyler og med plads til både helse og hygge.
-                    Men for nu, må vi forholde os til gældende lovgivning her i denne sidste fase af forbudstiden. Og
-                    her kan vi i det
-                    mindste bruge industrihamp som potpourri. Og det kan altså trods alt også noget, synes jeg.God
-                    fornøjelse!</p>
-                <img src="imgs/signatur.png" alt="">
+            <div class="box1_2">
+                <div>
+                    <p>Fra frøenes koldpressede olie med gunstige niveauer af Omega- og GLS syrer - over stænglernes
+                        fibre
+                        som er nogle af
+                        naturens stærkeste og mest velegnede til papir, tekstil, reb og kompositmateriale og som kan
+                        bruges
+                        til miljøvenligere
+                        erstatninger for bomuld, cement, plast og animalske proteiner, der i dag tegner sig for ganske
+                        anseelig klimabelastning
+                        - til bladene og blomsternes eftertragtede cannabinoider, terpener og flavonoider.</p>
+
+                    <p>Vi ser heldigvis en global tendens til at få hele planten tilbage på bordet. Fra effektive fibre
+                        til
+                        terapeutiske
+                        molekyler og med plads til både helse og hygge.</p>
+
+                    <p>Men for nu, må vi forholde os til gældende lovgivning her i denne sidste fase af forbudstiden. Og
+                        her kan vi i det
+                        mindste bruge industrihamp som potpourri. </p>
+
+                    <p>Og det kan altså trods alt også noget, synes jeg.</p>
+
+                    <p>God fornøjelse!</p>
+                </div>
+                <div class="signature_container">
+                    <img src="imgs/signatur.png" alt="">
+                </div>
             </div>
         </div>
 
@@ -113,26 +128,35 @@
         </div>
 
         <div class="box2">
-            <div>
+            <div class="box1_1">
                 <div>
-                    <h3>Lovgivning og formalia</h3>
-                    <p>Cannabis er på listen over euforiserende stoffer som i udgangspunktet er ulovlige. Men siden den
+                    <div class="grid_title_pic">
+                        <h3>Lovgivning og formalia</h3>
+                        <img class="lille_ikon" src="imgs/prikker.svg" alt="">
+                    </div>
+                    <p>Cannabis er på listen over euforiserende stoffer som i udgangspunktet er ulovlige. Men siden
+                        den
                         23. juni 2020 har både
-                        selve planten og udtræk ikke været omfattet af bekendtgørelsen, når indholdet af THC er under
+                        selve planten og udtræk ikke været omfattet af bekendtgørelsen, når indholdet af THC er
+                        under
                         0,2%, og vi følger
                         selvfølgelig dansk lovgivning.
+                    </p>
 
-                        Skulle din hamp alligevel blive genstand for politiets interesse, anbefaler vi, at du beder om
+                    <p>Skulle din hamp alligevel blive genstand for politiets interesse, anbefaler vi, at du beder
+                        om
                         kvittering for
-                        beslaglæggelsen og insisterer på en analyse af indholdet.
+                        beslaglæggelsen og insisterer på en analyse af indholdet.</p>
+                    <p>
                         Det er politiets opgave at bevise, at din hamp har et indehold af THC, der overstiger
                         dettilladte. Gør den ikke det,
-                        skal du ikke betale bøde eller acceptere anden straf, og begivenheden må ikke kunne ses på din
+                        skal du ikke betale bøde eller acceptere anden straf, og begivenheden må ikke kunne ses på
+                        din
                         strafattest.</p>
                 </div>
-                <img src="imgs/logo_default.png" alt="logo">
+                <img id="logo_box2" src="imgs/logo_default.png" alt="logo">
             </div>
-            <div>
+            <div class="lov_box">
                 <p>For som der står i §1, stk. 3, i bekendtgørelse nr. 2446 af 12. december 2021 om euforiserende
                     stoffer:
                     Til euforiserende midler henregnes ikke: “... nr. 7) Droger af den på liste B som nr. 59 opførte
@@ -140,13 +164,18 @@
                     tilberedninger heraf, hvis drogen eller tilberedningen har et indhold af tetrahydrocannabinol på
                     højst 0,2 pct"</p>
             </div>
-            <div>
-                <h3>Industrihamp</h3>
+            <div id="box2_3">
+                <div class="grid_title_pic">
+                    <img class="lille_ikon" src="imgs/sol.svg" alt="">
+                    <h3>Industrihamp</h3>
+                </div>
                 <p>Hos Raske Planter sælger vi kun varer, der er helt lovligt at eje og håndtere.Selvom det ligner pot
                     og skunk og også
                     dufter sådan, så er alt i Raske Planters sortiment under den lovbestemte grænse for THC på 0,2%. Det
                     sikrer vi ved at
-                    få lavet laboratorietests af hvert batch, vi sælger. Du kan se testresultater under beskrivelsen af
+                    få lavet laboratorietests af hvert batch, vi sælger. </p>
+
+                <p>Du kan se testresultater under beskrivelsen af
                     hvert produkt. Her
                     kan du bl.a. se de forskellige sorters indhold af CBD og CBG som er cannabinoider, der ikke er
                     reguleret af

@@ -22,36 +22,42 @@ main {
 .title2 {
   background-image: url(imgs/box2_art.png);
   background-size: cover;
+  height: 30vh;
+  text-align: center;
+  place-content: center;
 }
 
 .title3 {
   background-image: url(imgs/box3_art.png);
   background-size: cover;
+  height: 30vh;
+  text-align: center;
+  place-content: center;
 }
 
 .box1 {
-  margin: 10%;
-  padding: 3rem;
+  margin: 8% 14%;
+  padding: 1.3rem;
   background-color: #cebb98;
-  border-radius: 0.3rem;
+  border-radius: 0.4rem;
   display: grid;
   grid-gap: 30px;
 }
 
 .box2 {
-  margin: 8rem;
-  padding: 1rem;
+  margin: 8% 14%;
+  padding: 4%;
   background-color: #cebb98;
-  border-radius: 0.3rem;
+  border-radius: 0.4rem;
   display: grid;
-  grid-template-rows: 2fr 1fr 2fr;
+  grid-template-rows: 2fr 1fr 1fr;
 }
 
 .box3 {
   margin: 8rem;
   padding: 1rem;
   background-color: #cebb98;
-  border-radius: 0.3rem;
+  border-radius: 0.4rem;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
@@ -59,32 +65,62 @@ main {
 .box1_1 {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  position: relative;
+  gap: 6%;
 }
 
-.blad_portrait {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  position: relative;
+.box1_1 p {
+  padding-top: 1rem;
 }
 
-#blad1 {
-  grid-row-start: 1;
-  position: absolute;
+.box1_1-1 {
+  padding-top: 12%;
+  padding-left: 6%;
 }
 
-#portrait {
-  grid-row-start: 2;
-  position: absolute;
-  z-index: 2;
+.box1_2 img {
+  width: 20%;
 }
 
-#blad2 {
-  grid-row-start: 4;
-  position: absolute;
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  transform: rotate(180deg);
+.box1_2 {
+  gap: 1rem;
+}
+
+.signature_container {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  place-content: center;
+}
+
+.box1_2 p {
+  padding-right: 10%;
+  padding-left: 4%;
+  padding-top: 1%;
+}
+
+.lov_box {
+  margin: 3% 10%;
+  background-color: #e1ceaa;
+  border-radius: 0.4rem;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.382);
+  padding: 3%;
+}
+
+#logo_box2 {
+  opacity: 30%;
+}
+
+.lille_ikon {
+  width: 5%;
+}
+
+.grid_title_pic {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1%;
+}
+
+#box2_3 {
+  gap: 1rem;
 }

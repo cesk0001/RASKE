@@ -7,13 +7,14 @@
   --accent-green: #638667;
   --white: #ffffff;
 
-  --space-xs: 16px;
+  --space-xs: 12px;
   --space-sm: 20px;
   --space-md: 38px;
 
-  --space-lg: 18px;
+  --space-lg: 14px;
   --space-xl: 22px;
-  --space-xxl: 46px;
+  --space-xxl: 28px;
+  --space-xxxl: 46px;
 }
 
 * {
@@ -33,12 +34,12 @@ font-family: "Nunito Sans"
 */
 h1 {
   font-family: "Fraunces";
-  font-size: var(--space-xxl);
+  font-size: var(--space-xxxl);
   color: var(--secondary);
   font-weight: 900;
   text-align: center;
   padding-top: 2rem;
-  padding-bottom: 4px;
+  padding-bottom: 2rem;
 }
 
 h2 {
@@ -49,6 +50,14 @@ h2 {
   text-align: center;
   padding-top: 2%;
   padding-bottom: 2%;
+}
+
+h3 {
+  font-family: "Fraunces";
+  font-size: var(--space-xxl);
+  color: var(--secondary);
+  font-weight: 700;
+  font-variation-settings: "WONK" 1;
 }
 
 a {
@@ -66,7 +75,7 @@ p {
   font-family: "Nunito Sans";
   font-size: var(--space-xs);
   font-weight: 400;
-  line-height: 30px;
+  line-height: 27px;
 }
 
 @media (min-width: 800px) {
@@ -77,7 +86,7 @@ p {
     font-size: var(--space-xl);
   }
   h1 {
-    font-size: var(--space-xxl);
+    font-size: var(--space-xxxl);
   }
   li {
     font-size: 18px;
