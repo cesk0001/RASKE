@@ -1,12 +1,14 @@
 document.addEventListener("DOMContentLoaded", init);
 
 const filterButtons = document.querySelectorAll("#filter button");
+const filterRadio = document.querySelectorAll("#filter input[type='radio']");
 const productGrid = document.querySelector("#productGrid");
 
 function init() {
   // add eventlisters to filters
-  for (i = 0; i < filterButtons.length; i++) {
-    filterButtons[i].addEventListener("click", updateProducts);
+  for (i = 0; i < filterRadio.length; i++) {
+    console.log("hello");
+    filterRadio[i].addEventListener("change", updateProducts);
   }
   updateProducts();
 }
