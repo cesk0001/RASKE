@@ -11,18 +11,49 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet">
     <script src="produkter.js" defer></script>
     <style>
         #productGrid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            grid-gap: 20px;
+            gap: 20px;
+        }
+
+        #filter input[type="radio"] {
+            display: none;
+        }
+
+        #filter label {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            background-color: unset;
+            background-image: url("./imgs/box6.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 37px;
+            width: 100px;
+            margin: 10px;
+            font-family: "Nunito", sans-serif;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #filter input[type="radio"]:checked+label {
+            font-weight: bold;
+            /* udskift med filled SVG */
+            background-image: url("./imgs/box6fill.png");
+            color: var(--black);
         }
 
         .product {
-            background: lightgrey;
+            background: var(--primary);
+            border: 2px solid;
+            border-color: black;
+            border-radius: 12px;
         }
 
         .productLink {
@@ -95,17 +126,24 @@
 
         </nav>
     </header>
-    <div id="filter">
-        <button type="button" id="all">All Products</button>
-        <button type="button" id="klump">Klump</button>
-        <button type="button" id="topskud">Topskud</button>
-        <button type="button" id="olie">Olier</button>
-        <button type="button" id="extra">Ekstra Ting</button>
-    </div>
+    <main>
+        <div id="filter">
+            <input type="radio" id="all" value="all" name="filter" checked>
+            <label for="all">Alle Varer</label>
+            <input type="radio" id="klump" value="klump" name="filter">
+            <label for="klump">Klump</label>
+            <input type="radio" id="topskud" value="topskud" name="filter">
+            <label for="topskud">Topskud</label>
+            <input type="radio" id="olie" value="olie" name="filter">
+            <label for="olie">Olier</label>
+            <input type="radio" id="extra" value="extra" name="filter">
+            <label for="extra">Ekstra Ting</label>
+        </div>
 
-    <div id="productGrid">
+        <div id="productGrid">
 
-    </div>
+        </div>
+    </main>
 </body>
 
 </html>
