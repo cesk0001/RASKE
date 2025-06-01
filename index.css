@@ -42,9 +42,17 @@ body {
 }
 
 .card_container_index {
-  margin: 8rem 8rem 2rem;
+  margin: 8rem;
+  padding: 0 3rem;
   background-color: #cebb98;
   border-radius: 0.3rem;
+  place-self: center;
+}
+
+.card_container_index_mom {
+  display: flex;
+  justify-content: center;
+  place-content: center;
 }
 
 #claims_container {
