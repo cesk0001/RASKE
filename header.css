@@ -135,6 +135,16 @@ nav ul {
   grid-row-end: 6;
 }
 
+#basket {
+  width: 80px;
+  position: fixed;
+  right: 0;
+  top: 50%;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
 @media (max-width: 900px) {
   #top_bar {
     animation: none;
@@ -150,5 +160,8 @@ nav ul {
 
   #top_bar_section * {
     overflow: visible;
+  }
+  #basket {
+    width: 60px;
   }
 }

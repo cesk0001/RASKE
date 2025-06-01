@@ -49,3 +49,65 @@ footer {
 .socials a:hover {
   filter: brightness(150%) saturate(80%);
 }
+
+footer p {
+  color: white;
+}
+
+.footer_info_box {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer_info_box p {
+  max-width: 30%;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.form-box {
+  border-radius: 5px;
+  background: white;
+  padding-left: 20px;
+}
+.form-box input {
+  font-size: 15px;
+  color: black;
+  border: none;
+  outline: none;
+  padding-right: 10px;
+}
+
+.form-box button {
+  background-color: #ddceac;
+  color: black;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "WONK" 1;
+  line-height: 27px;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+}
+
+.form-box {
+  border-radius: 5px;
+  background: white;
+  padding-left: 20px;
+}
+.form-box input {
+  font-size: 15px;
+  color: black;
+  border: none;
+  outline: none;
+  padding-right: 10px;
+}
