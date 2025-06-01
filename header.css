@@ -145,6 +145,33 @@ nav ul {
   user-select: none;
 }
 
+.burger {
+  width: 30px;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 0.7rem;
+  margin-right: 0.7rem;
+}
+
+.burger .line {
+  width: 110%;
+  height: 3px;
+  background-color: black;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+.logo_mobil {
+  display: none;
+}
+
+header a:hover {
+  color: #8c0e03;
+}
+
 @media (max-width: 900px) {
   #top_bar {
     animation: none;
@@ -163,5 +190,55 @@ nav ul {
   }
   #basket {
     width: 60px;
+  }
+
+  .logo_mobil {
+    display: block;
+    width: 50px;
+    margin-top: 0.7rem;
+    margin-left: 0.7rem;
+  }
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: #e1ceaa;
+    position: absolute;
+    top: 80px;
+    left: 0%;
+    width: 100%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 24px;
+  }
+
+  .menu a {
+    padding-top: 0%;
   }
 }
