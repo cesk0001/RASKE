@@ -194,6 +194,10 @@ body {
   text-align: center;
 }
 
+#understreg {
+  text-decoration: underline;
+}
+
 @media (max-width: 900px) {
   .box1 {
     margin: 8% 8%;
